@@ -31,11 +31,14 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Liste des tables
-db.sections = require('./sectionModel.js')(sequelize, DataTypes);
-db.subsections = require('./subsectionModel.js')(sequelize, DataTypes);
-db.animals = require('./animalModel.js')(sequelize, DataTypes);
 db.users = require('./userModel.js')(sequelize, DataTypes);
-db.imganimal = require('./imganimalModel.js')(sequelize, DataTypes);
+db.seed = require('./seedModel.js')(sequelize, DataTypes);
+db.search = require('./searchModel.js')(sequelize, DataTypes);
+db.order = require('./orderModel.js')(sequelize, DataTypes);
+db.offer = require('./offerModel.js')(sequelize, DataTypes);
+db.cart = require('./cartModel.js')(sequelize, DataTypes);
+//db.followoffer = require('./followofferModel.js')(sequelize, DataTypes);
+//db.followuser = require('./followuserModel.js')(sequelize, DataTypes);
 
 db.sequelize.sync({ force: false })
     .then( () => {

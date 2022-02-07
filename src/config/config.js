@@ -1,10 +1,10 @@
 
 module.exports = {
-    DB_HOST: `${process.env.DB_HOST}`,
+    DB_HOST: `${process.env.DB_HOST_GNT}`,
     DB_CONNECT: `${process.env.DB_CONNECT}`,
-    DB_USER: `${process.env.DB_USER}`,
-    DB_PWD: `${process.env.DB_PWD}`,
-    DB_DATABASE: `${process.env.DB_DATABASE}`,
+    DB_USER: `${process.env.DB_USER_GNT}`,
+    DB_PWD: `${process.env.DB_PWD_GNT}`,
+    DB_DATABASE: `${process.env.DB_DATABASE_GNT}`,
 
     POOL: {
         MAX: 3,

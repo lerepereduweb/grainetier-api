@@ -7,7 +7,7 @@ const User = db.users;
         res.status(200).json(contact);
     }
     catch (err) {
-        console.error(`Erreur dans l'éxécution de la fonction getWho : ${err.message}`);
+        console.error(`Erreur dans l'éxécution de la fonction getUsers : ${err.message}`);
     }
  };
 

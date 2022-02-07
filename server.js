@@ -31,11 +31,13 @@ app.use(function(req, res, next) {
 //Router
 const router = require('./src/routes/frontRouter');
 app.use(`${URL_API}`, router);
+//const routerback = require('./src/routes/backRouter');
+//app.use(`${URL_API}`, routerback);
 
 //Test API
 app.get(`${URL_API}`, (req, res) => {
     try {
-        res.json({message : 'API REST de l\'association Aidez-nous 83'});
+        res.json({message : 'API REST de l\'application "Le Grainetier"'});
     } 
     catch (err) {
         throw new Error(err.message)

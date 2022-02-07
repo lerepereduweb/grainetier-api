@@ -4,9 +4,14 @@ module.exports = (sequelize, DataTypes) => {
 
         nom_user: { 
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
-      
+
+        prenom_user: { 
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+
         pseudo_user: {
             type: DataTypes.STRING, 
             allowNull: false, 
@@ -14,22 +19,28 @@ module.exports = (sequelize, DataTypes) => {
       
         ctc_user: {
             type: DataTypes.STRING,
-            allowNull: true            
+            allowNull: false            
         },
+      
+        adr_user: {
+            type: DataTypes.STRING,
+            allowNull: false            
+        },
+
+        cp_user: {
+            type: DataTypes.INTEGER,
+            allowNull: false            
+        },
+
       
         ville_user: {
             type: DataTypes.STRING, 
             allowNull: false, 
         },
-      
-        adr_user: {
-            type: DataTypes.STRING,
-            allowNull: true            
-        },
 
-        cp_user: {
-            type: DataTypes.INTEGER,
-            allowNull: true            
+        pays_user: {
+            type: DataTypes.STRING, 
+            allowNull: false, 
         },
 
         tlp_user: {
@@ -37,14 +48,9 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true            
         },
 
-        mer_user: {
-            type: DataTypes.BOOLEAN,
-            allowNull: false            
-        },
-
         sec_user: {
             type: DataTypes.STRING,
-            allowNull: true            
+            allowNull: false            
         },
     });
 
