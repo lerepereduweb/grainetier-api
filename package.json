@@ -1,0 +1,46 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API REST de l'association de protection animale Aidez-nous 83",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "refuge",
+    "animal",
+    "animaux",
+    "animaux",
+    "de",
+    "compagnie",
+    "animaux",
+    "domestiques",
+    "protection",
+    "animale",
+    "adopter",
+    "adoption",
+    "alimentation",
+    "animale",
+    "croquettes",
+    "chien",
+    "chat",
+    "animaux",
+    "abandonnés",
+    "animaux",
+    "perdus"
+  ],
+  "author": "Le Repère du Web (lerepereduweb)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.3",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.2.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
